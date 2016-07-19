@@ -1,0 +1,24 @@
+/**
+ *   @section css模拟对勾√
+ *   @author zhangmingrui
+ *   参数说明:
+ *      border-width: 对勾border宽度
+ *      color: 对勾颜色
+ *      width: 对勾长边的长度
+ *      height: 对勾短边的长度
+ *   使用方法：
+ *      .myclass{
+ *          .tick(...);
+ *      }
+ *      <i class="myclass"></i>
+ * }
+ */
+/**
+ *  css3-transform动画
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2015-12-02
+ */
+/**
+ *   @section 所有属性值都自己设置
+ */

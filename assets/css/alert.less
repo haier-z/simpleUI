@@ -1,0 +1,26 @@
+/**
+ *   @section 弹出层less
+ *   @author zhaoli
+ */
+@import "common/core/less-fn";
+@import "common/core/config";
+
+@import "common/layout/modal";
+
+.S-modal-alert {
+  border: 1px solid @g-color-line-lighter;
+  margin-left: -140rem/20rem;
+  padding-top: 0;
+  width: 280rem/20rem;
+  .S-modal-bd {
+    padding: 20rem/20rem 10rem/20rem;
+    text-align: center;
+    .S-alert-title {
+      font-size: 16rem/20rem;
+      font-weight: bold;
+    }
+    .S-mutil-lines {
+      text-align: left;
+    }
+  }
+}

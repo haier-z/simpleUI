@@ -1,0 +1,43 @@
+/**
+ *   @section 公用头部less
+ *   @author zhaoli
+ */
+@import "../core/less-fn";
+@import "../core/config";
+.S-header {
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid @g-color-line-lighter;
+  background-color: @g-color-background-lighter;
+  color: @g-color-grayer;
+  z-index: 500;
+  .S-header-back {
+    width: 2.2rem;
+    height: 2.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    position: absolute;
+    left: 0;
+    top: .2rem;
+    display: block;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: .8rem;
+      top: .6rem;
+      width: .7rem;
+      height: .7rem;
+      border-top: .1rem solid @g-color-blue;
+      border-left: .1rem solid @g-color-blue;
+      .transform(rotate(-45deg));
+    }
+  }
+
+}

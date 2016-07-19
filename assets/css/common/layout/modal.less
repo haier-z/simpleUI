@@ -1,0 +1,55 @@
+/**
+ *   @section 弹出层less
+ *   @author zhaoli
+ */
+@import "../core/less-fn";
+@import "../core/config";
+
+.S-modal {
+  background-color: @g-color-white;
+  border-radius: .1rem;
+  box-sizing: border-box;
+  display: none;
+  left: 50%;
+  margin-left: -150rem/20rem;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 300rem /20rem;
+  z-index: 985;
+  font-size: 14rem/20rem;
+  .S-modal-bd {
+    overflow-y: auto;
+    position: relative;
+  }
+  .S-actions {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    .S-actions-btn {
+      border-left: 1px solid @g-color-line-lighter;
+      border-top: 1px solid @g-color-line-lighter;
+      box-sizing: border-box;
+      color: @g-color-blue;
+      cursor: pointer;
+      height: 44rem/20rem;
+      line-height: 44rem/20rem;
+      text-align: center;
+      display: table-cell;
+      &:first-child {
+        border-left: none;
+      }
+      &.S-actions-false {
+        color: @g-color-grayer;
+      }
+    }
+    &.S-actions-full {
+      display: block;
+      .S-actions-btn {
+        border-left: none;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
