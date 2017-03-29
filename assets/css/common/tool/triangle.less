@@ -1,0 +1,28 @@
+
+/**
+  * @author Zhao Li
+  * @vision 2017.3.29 | 1.0.0
+  * @overviews 生成三角形
+  * @direction 三角形方向
+  * @width 底边宽度
+  * @height 高度
+  * @color 边框颜色
+  */
+
+.triangle (@direction: up, @width: 40px, @height: 20px, @color: @g-color-primary ) {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-style: solid;
+	.triangle-direction(@direction, @width, @height, @color)
+}
+
+.triangle-direction (@direction, @width, @height, @color) when (@direction = up) {
+	border-width: 0 floor(@width/2) floor(@height) floor(@width/2);
+	border-color: transparent transparent @color transparent;
+}
+
+.triangle-direction (@direction, @width, @height, @color) when (@direction = down) {
+	border-width: floor(@height) floor(@width/2) 0 floor(@width/2);
+	border-color: @color transparent transparent transparent;
+}
